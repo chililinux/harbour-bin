@@ -1,16 +1,17 @@
 # Maintainer: Vilmar Catafesta <vcatafesta@gmail.com>
 
-pkgname=chili-pkgname
-pkgdesc="Package template for Chililinux"
+pkgname=harbour-bin
+pkgdesc="Harbour is the open/free software implementation of a cross-platform, multi-threading, object-oriented, scriptable programming language"
+# Uncomment and edit the following lines as needed
 #depends=('')
 #makedepends=('')
 #optdepends=('')
-#conflicts=('')
-#provides=('')
-#replaces=('')
-pkgver=$(date +%y.%m.%d)
-pkgrel=$(date +%H%M)
-arch=('any')
+conflicts=('biglinux-harbour')
+provides=('biglinux-harbour')
+replaces=('biglinux-harbour')
+pkgver=3.4
+pkgrel=1
+arch=('x86_64')
 license=('MIT')
 url="https://github.com/chililinux/${pkgname}"
 source=("git+${url}.git")
